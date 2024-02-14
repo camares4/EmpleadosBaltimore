@@ -29,3 +29,14 @@ library(readr)
 nomruta <- "Data/Baltimore_City_Employee_Salaries.csv"
 datosReadr <- read_csv(file = nomruta, col_types = cols(hireDate = col_date(format = "%Y-%m-%d")))
 ```
+
+#Importamos datos con la librería RIO
+
+```{r}
+library(rio)
+datosRio <- import(nomruta)
+
+```
+
+
+
