@@ -38,5 +38,16 @@ datosRio <- import(nomruta)
 
 ```
 
+# Importamos fichero línea a línea
+
+```{r}
+guess_encoding(file=nomruta) #Codificación del fichero
+
+#abrimos el fichero con la codificación adecuada
+fichero <- file("Data/Baltimore_City_Employee_Salaries.csv",encoding = 'UTF-8')
+
+#leemos el fichero abierto línea a línea
+datoslinea <- readLines(con=fichero)
+```
 
 
