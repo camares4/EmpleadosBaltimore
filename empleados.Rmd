@@ -50,4 +50,8 @@ fichero <- file("Data/Baltimore_City_Employee_Salaries.csv",encoding = 'UTF-8')
 datoslinea <- readLines(con=fichero)
 ```
 
+```{r}
+p <- 2 + 4
+#Nuevo ordenador
+```
 
